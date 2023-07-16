@@ -8,6 +8,7 @@ import { Hospital } from "@/components/Hospital";
 import { Faq } from "@/components/Faq";
 import { CallToAction } from "@/components/CallToAction";
 import { Footer } from "@/components/Footer";
+import CopyRights from "@/components/CopyRights";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Faq />
       <CallToAction />
       <Footer />
+      <CopyRights />
     </main>
   )
 }

@@ -1,7 +1,111 @@
 import React from 'react'
+import { Disclosure } from '@headlessui/react'
+import { ChevronUpIcon } from "@heroicons/react/solid";
+import Image from 'next/image';
+import faqMobile from '../public/images/faqMobile.png'
 
 export const Faq = () => {
   return (
-    <div>Faq</div>
+    <div id='faq' className='md:h-[758px] w-full mt-[114px] '>
+
+      <div className='grid md:grid-cols-2 grid-cols-1 '>
+        <div></div>
+        <div>
+
+          <h2 className='text-[34px] text-[#282866] font-bold mt-[64px] ml-[45px]'>
+            Frequently Asked Questions
+          </h2>
+
+          <Disclosure>
+            {({ open }) => (
+              <div className='mt-[35px] w-[95%] mx-auto md:ml-[45px]'>
+                <Disclosure.Button className="flex justify-between w-full px-4 py-6 text-sm font-medium text-left bg-white rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
+                  <span className='text-[#282866] text-[16px]'>How much is a lip lift in Turkey?</span>
+                  <ChevronUpIcon
+                    className={`${open ? "transform rotate-180" : ""
+                      } w-5 h-5 text-[#282866]`}
+                  />
+                </Disclosure.Button>
+                <Disclosure.Panel className="px-4 pt-4 pb-2 text-[16px] text-gray-500">
+                  The average cost of a lip lift procedure in Turkey typically ranges between $1900 and $2300. However, it's important to note that the exact cost can vary depending on various factors such as the surgeon's experience, the location of the clinic, the complexity of the procedure, and any additional services included in the treatment package.
+                </Disclosure.Panel>
+              </div>
+            )}
+          </Disclosure>
+
+          <Disclosure>
+            {({ open }) => (
+              <div className='mt-[35px] w-[95%] mx-auto md:ml-[45px]'>
+                <Disclosure.Button className="flex justify-between w-full px-4 py-6 text-[16px] font-medium text-left bg-white rounded-lg hover:text-white focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
+                  <span className='text-[#282866] text-[16px]'>How long does a lip lift last?</span>
+                  <ChevronUpIcon
+                    className={`${open ? "transform rotate-180" : ""
+                      } w-5 h-5 text-[#282866]`}
+                  />
+                </Disclosure.Button>
+                <Disclosure.Panel className="px-4 pt-4 pb-2 text-[16px] text-gray-500">
+                  Lip lifts are often considered long-lasting operations that deliver benefits for several years. However, if you are unhappy with the appearance of your lips or want to reduce any visible scars, a touch-up procedure may be required in some situations. The outcome of your lip lift surgery will rely on your unique anatomy and the quantity of skin that has to be elevated.
+                </Disclosure.Panel>
+              </div>
+            )}
+          </Disclosure>
+
+          <Disclosure>
+            {({ open }) => (
+              <div className='mt-[35px] w-[95%] mx-auto md:ml-[45px]'>
+                <Disclosure.Button className="flex justify-between w-full px-4 py-6 text-[16px] font-medium text-left bg-white rounded-lg hover:text-white focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
+                  <span className='text-[#282866] text-[16px]'>How painful is a chin implant?</span>
+                  <ChevronUpIcon
+                    className={`${open ? "transform rotate-180" : ""
+                      } w-5 h-5 text-[#282866]`}
+                  />
+                </Disclosure.Button>
+                <Disclosure.Panel className="px-4 pt-4 pb-2 text-[16px] text-gray-500">
+                  Lip lifts are often considered long-lasting operations that deliver benefits for several years. However, if you are unhappy with the appearance of your lips or want to reduce any visible scars, a touch-up procedure may be required in some situations. The outcome of your lip lift surgery will rely on your unique anatomy and the quantity of skin that has to be elevated.
+                </Disclosure.Panel>
+              </div>
+            )}
+          </Disclosure>
+
+          <Disclosure>
+            {({ open }) => (
+              <div className='mt-[35px] w-[95%] mx-auto md:ml-[45px]'>
+                <Disclosure.Button className="flex justify-between w-full px-4 py-6 text-[16px] font-medium text-left bg-white rounded-lg hover:text-white focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
+                  <span className='text-[#282866] text-[16px]'>How long do chin implants last?</span>
+                  <ChevronUpIcon
+                    className={`${open ? "transform rotate-180" : ""
+                      } w-5 h-5 text-[#282866]`}
+                  />
+                </Disclosure.Button>
+                <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                  Lip lifts are often considered long-lasting operations that deliver benefits for several years. However, if you are unhappy with the appearance of your lips or want to reduce any visible scars, a touch-up procedure may be required in some situations. The outcome of your lip lift surgery will rely on your unique anatomy and the quantity of skin that has to be elevated.
+                </Disclosure.Panel>
+              </div>
+            )}
+          </Disclosure>
+
+          <Disclosure>
+            {({ open }) => (
+              <div className='mt-[35px] w-[95%] mx-auto md:ml-[45px]'>
+                <Disclosure.Button className="flex justify-between w-full px-4 py-6 text-sm font-medium text-left bg-white rounded-lg hover:text-white focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
+                  <span className='text-[#282866] text-[16px]'>Is otoplasty very painful?</span>
+                  <ChevronUpIcon
+                    className={`${open ? "transform rotate-180" : ""
+                      } w-5 h-5 text-[#282866]`}
+                  />
+                </Disclosure.Button>
+                <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                  Lip lifts are often considered long-lasting operations that deliver benefits for several years. However, if you are unhappy with the appearance of your lips or want to reduce any visible scars, a touch-up procedure may be required in some situations. The outcome of your lip lift surgery will rely on your unique anatomy and the quantity of skin that has to be elevated.
+                </Disclosure.Panel>
+              </div>
+            )}
+          </Disclosure>
+        </div>
+
+        <Image src={faqMobile} width={375} height={395} className='mx-auto pt-[40px] md:hidden' />
+      </div>
+
+
+    </div>
   )
 }
