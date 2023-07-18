@@ -8,7 +8,7 @@ import { PackageCard } from './PackageCard'
 export const PackageDetails = () => {
   return (
     <div id='packageDetails' className='md:h-[990px] bg-[#282866] w-full text-center mx-auto'>
-      <h2 className="text-[34px] font-bold text-[#fff] mt-[90px]">
+      <h2 className="packageDetails text-[34px] font-bold text-[#fff] mt-[90px]">
         Rhinoplasty Package Details
       </h2>
       <h3 className='text-[18px] text-[#D0977D] pt-3'>

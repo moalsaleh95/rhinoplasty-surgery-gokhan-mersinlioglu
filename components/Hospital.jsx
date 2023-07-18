@@ -9,7 +9,7 @@ import Image from 'next/image'
 export const Hospital = () => {
   return (
     <div id='hospital' className='container text-center'>
-      <h2 className="text-[34px] font-bold text-[#282866] pt-[63px] md:mt-[60px]">
+      <h2 className="hospital text-[34px] font-bold text-[#282866] pt-[63px] md:mt-[60px]">
         Hospital
       </h2>
       <h3 className='text-[18px] text-[#D0977D] pt-3 mb-[62px]'>

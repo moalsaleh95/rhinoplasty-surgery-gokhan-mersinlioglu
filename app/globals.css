@@ -9,19 +9,17 @@
 }
 
 body {
-  /* color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
-    overflow-x: hidden;
+  font-family: 'Open Sans';
+  overflow-x: hidden;
 }
 
-@media (min-width: 768px) { 
+html {
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 768px) {
   .hero_img {
-    background-image:url('../public/images/Bgdesktop.png');
+    background-image: url('../public/images/Bgdesktop.png');
     background-position: center;
     background-origin: padding-box;
     background-repeat: no-repeat;
@@ -29,17 +27,17 @@ body {
   }
 
   #faq {
-    background-image:url('../public/images/faqDektop.png');
+    background-image: url('../public/images/faqDektop.png');
     background-position: center;
     background-origin: padding-box;
     background-repeat: no-repeat;
     background-size: cover;
   }
- }
+}
 
- @media (max-width: 768px) { 
+@media (max-width: 768px) {
   .hero_img {
-    background-image:url('../public/images/Bg.png');
+    background-image: url('../public/images/Bg.png');
     background-position: center;
     background-origin: padding-box;
     background-repeat: no-repeat;
@@ -53,7 +51,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
   }
- }
+}
 
 .whiteCircle {
   width: 50px;
@@ -131,7 +129,7 @@ body {
   display: flex;
   justify-content: center;
 }
-  
+
 .image {
   width: 412px;
 }
@@ -170,7 +168,7 @@ body {
   width: 49px !important;
   margin: auto;
   position: absolute;
-  bottom: 70px;
+  /* bottom: 70px; */
   left: 145px;
 }
 
@@ -190,7 +188,8 @@ body {
   background-color: #2116A5 !important;
 }
 
-.owl-carousel .owl-nav.disabled, .owl-theme .owl-nav {
+.owl-carousel .owl-nav.disabled,
+.owl-theme .owl-nav {
   position: absolute;
   top: 0;
   right: 30px;
@@ -208,41 +207,43 @@ body {
   background: #2116A5;
 }
 
-.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
   color: #fff !important;
 }
-  
-  .logo {
-  	bottom: 145px;
-  }
-  
-  .review {
-  	transform: translateY(25px);
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-  
-.owl-item {
-  	height: 530px;
-  }
-  
-  .owl-prev, .owl-next {
-    display: none !important;
-  }
-  
-  .review-container {
-  	height: 170px;
-    background-color: #F4F7FC;
-    border-radius: 10px;
-  }
 
-  /* Whatsapp floating button */
+.logo {
+  bottom: 185px;
+}
+
+.review {
+  transform: translateY(25px);
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.owl-item {
+  height: 530px;
+}
+
+.owl-prev,
+.owl-next {
+  display: none !important;
+}
+
+.review-container {
+  height: 205px;
+  background-color: #F4F7FC;
+  border-radius: 10px;
+}
+
+/* Whatsapp floating button */
 
 .float {
-  position:fixed;
-	bottom: 20px;
-	right: 20px;
-  z-index:100;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
   transition: all .2s ease-in-out;
 }
 
@@ -267,7 +268,7 @@ body {
   animation-name: circle;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-  animation-timing-function: linear; 
+  animation-timing-function: linear;
 }
 
 .circle1 {
@@ -285,12 +286,14 @@ body {
 /* ************** */
 
 @keyframes circle {
-   0% {
+  0% {
     top: -10px;
   }
-  8%{
+
+  8% {
     top: -8px
   }
+
   100% {
     top: -8px;
   }
@@ -309,16 +312,50 @@ body {
 }
 
 
-  .my-float {
-    margin-top:16px;
-  }
-  
-  #demo b {
-  	font-size: 30px
-  }
+.my-float {
+  margin-top: 16px;
+}
 
-  #lp-pom-form-27 {z-index:999;}
-  
-  div.lp-pom-root .lp-pom-text a, .cke-text a {
-    text-decoration: none;
-  }
+#demo b {
+  font-size: 30px
+}
+
+#lp-pom-form-27 {
+  z-index: 999;
+}
+
+div.lp-pom-root .lp-pom-text a,
+.cke-text a {
+  text-decoration: none;
+}
+
+.beforeAfter,
+.hospital,
+.packageDetails {
+  position: relative;
+}
+
+.beforeAfter::after,
+.hospital::after {
+  content: '';
+  position: absolute;
+  top: 106%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 245px;
+  height: 1px;
+  background-color: #D3E6FB;
+}
+
+.packageDetails::after {
+  content: '';
+  position: absolute;
+  top: 106%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 245px;
+  height: 1px;
+  background-color: #D0977D;
+}
