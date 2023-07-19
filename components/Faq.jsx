@@ -46,6 +46,8 @@ export const Faq = () => {
     });
 
     otherRefs.forEach(ref => {
+      console.log('isOpen:', ref.current?.getAttribute("data-open"))
+
       const isOpen = ref.current?.getAttribute("data-open") === "true";
 
       if (isOpen) {
@@ -66,10 +68,10 @@ export const Faq = () => {
           <div className='mt-[35px] w-[95%] mx-auto md:ml-[45px]'>
             <Disclosure.Button
               ref={refs[idx]}
-              data-id={id}
+              data-id={idx}
               data-open={open}
-              onClick={() => handleClosing(id)}
-              className="flex justify-between w-full px-4 py-6 text-sm font-medium text-left bg-white rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75"
+              onClick={() => handleClosing(idx)}
+              className="flex justify-between w-full px-4 py-6 text-sm font-medium text-left bg-white rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-opacity-75"
             >
 
               <span id="quesitonSpan" className='text-[#282866] text-[16px]'>
