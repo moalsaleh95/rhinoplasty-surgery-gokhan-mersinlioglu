@@ -359,3 +359,31 @@ div.lp-pom-root .lp-pom-text a,
   height: 1px;
   background-color: #D0977D;
 }
+
+
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+  position: absolute;
+  bottom: 0rem;
+}
+
+.swiper-pagination-bullet {
+  width: 11px !important;
+  height: 11px !important;
+  background-color: #E5E5E5 !important;
+  border-radius: 3px !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 11px !important;
+  height: 11px !important;
+  background-color: #282866 !important;
+  border-radius: 3px !important;
+}
+
+.swiper-wrapper {
+  height: 38rem !important;
+}
+
+.container_carousel {
+  margin: auto !important;
+}

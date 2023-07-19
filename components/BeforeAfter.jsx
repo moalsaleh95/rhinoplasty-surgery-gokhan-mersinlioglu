@@ -2,6 +2,7 @@ import image_1 from '../public/images/b1.png'
 import image_2 from '../public/images/b2.png'
 import image_3 from '../public/images/b3.png'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
 import 'swiper/css/bundle';
 import 'swiper/css/pagination';
 import 'swiper/css';
@@ -53,8 +54,8 @@ export const BeforeAfter = () => {
     },
   ]
 
-  const images = carousel_images.map((item, index) => {
-    console.log(item.src)
+  const images = carousel_images.map((item) => {
+
     return (
 
       <SwiperSlide>
@@ -82,12 +83,26 @@ export const BeforeAfter = () => {
         Get to Know Us Through Patient Testimonials
       </h3>
 
-      <div className='w-full mt-[43px]' >
+      <div className='w-full left-0 right-0 mx-auto mt-[43px]' >
         <Swiper
+          modules={[Pagination]}
+          pagination={{ clickable: true }}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+              // spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              // spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 3,
+              // spaceBetween: 50,
+            },
+          }}
           spaceBetween={0}
-          slidesPerView={3}
-          onSlideChange={() => console.log('slide change')}
-          onSwiper={(swiper) => console.log(swiper)}
+          // slidesPerView={3}
         >
           {images}
         </Swiper>
