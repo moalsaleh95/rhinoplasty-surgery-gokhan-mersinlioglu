@@ -21,7 +21,7 @@ export const PackageDetails = () => {
         <PackageCard icon={pack3} width={88} height={74}  title={'Expert Medical Team'} content={' Benefit from the expertise of our skilled surgeons and dedicated medical staff who provide personalized care throughout your Rhinoplasty procedure.'} />
       </div>
 
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-x-[94px] md:pt-[110px] pt-0 container justify-items-center mx-auto">
+      <div className="grid md:grid-cols-2 grid-cols-1  md:pt-[110px] pt-0 container justify-items-center mx-auto">
         <PackageCard icon={pack4} width={102} height={70} title={'Travel Buddy Experience'} content={' Combine your Rhinoplasty procedure with our Travel Buddy services, encompassing luxurious accommodations, local sightseeing.'} />
         <PackageCard icon={pack5} width={64} height={76} title={'Tailored Treatment Plans'} content={'Our all-inclusive packages offer customized treatment plans that address your unique needs and goals, providing you with the best possible results.'} />
       </div>

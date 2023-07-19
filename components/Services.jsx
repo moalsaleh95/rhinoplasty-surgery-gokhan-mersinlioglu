@@ -23,7 +23,7 @@ export const Services = () => {
         <ServiceCard icon={icon3} title={'Ethnic Rhinoplasty'} content={'Ethnic rhinoplasty or ethnic revision in eye therapy respects varied anatomical traits by addressing individual eye difficulties while conserving cultural and ethnic characteristics through tailored surgical and non-surgical procedures.'} href={'https://api.whatsapp.com/send?phone=+905465594285&text=Hello,%20I%20would%20like%20to%20know%20about%20the%20services%20and%20prices%20offered%20for%20ethnic%20rhinoplasty.'} />
       </div>
 
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-x-[94px] md:pt-[110px] pt-0">
+      <div className="grid md:grid-cols-2 grid-cols-1 md:pt-[110px] pt-0">
         <ServiceCard icon={icon4} title={'Ethnic Revision'} content={'Ethnic revision in eye therapy respects varied anatomical traits by addressing individual eye difficulties while conserving cultural and ethnic characteristics through tailored surgical and non-surgical procedures.'} href={'https://api.whatsapp.com/send?phone=+905465594285&text=Hello,%20I%20would%20like%20to%20know%20about%20the%20services%20and%20prices%20offered%20for%20upper%20eyelid'} />
         <ServiceCard icon={icon5} title={'Cadaver Cartilage'} content={'Cadaver cartilage is a substance derived from the cartilage of deceased humans or animals that is often utilized in eye therapies, notably corneal transplantation.'} href={'https://api.whatsapp.com/send?phone=+905465594285&text=Hello,%20I%20would%20like%20to%20know%20about%20the%20services%20and%20prices%20offered%20for%20bichectomy.'} />
       </div>
