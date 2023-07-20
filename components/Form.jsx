@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Form = () => {
   return (
-    <div className='md:relative absolute md:bottom-[0] !bottom-[-26rem] mt-[203px] md:w-[437px] w-[335px] h-[523px] md:bg-white bg-[#282866] border-[#6969FF] border-2 rounded-lg'>
+    <div className='md:relative absolute md:bottom-[0] bottom-[-41rem] mt-[203px] md:w-[437px] w-[335px] h-[523px] md:bg-white bg-[#282866] border-[#6969FF] border-2 rounded-lg'>
       <h3 className='font-bold text-[22px] text-white md:text-black mt-[60px] pl-6'>
         Request a Free Consultation
       </h3>
